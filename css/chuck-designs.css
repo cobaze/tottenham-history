@@ -1,0 +1,1643 @@
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Chuck Obaze
+email:     obazechuck@gmail.com
+website:   http://obazedesigns.com
+-----------------------------------------------------------------------------*/
+/* =imports
+-----------------------------------------------------------------------------*/
+/* START FONT FAMILY*/
+/* END FONT FAMILY*/
+/* =SASS Variables
+-----------------------------------------------------------------------------*/
+/* line 26, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section#home {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 36, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#home-portfolio h2, div#process h2, div#phil h2, div#expertise h2, div#about h2, div#portfolio h2, div#contact h2, div.nipost-holder h2, div.nipost-holder h3, div.nipost-holder h4 {
+  text-align: center;
+  margin-bottom: 2%;
+  color: #414042;
+  font-size: 3.5em;
+  font-weight: 300;
+}
+
+/* line 44, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.portfolio-bg, div.contact-bg, div.nipost-bg, div.aglow-bg, div.connect-bg, div.bugout-bg, div.wedding-bg, div.flyer-bg, div.interconf-bg, div.tailored-bg, div.rebrand-bg, div.branding-bg, div.newsletter-bg, div.tradeshow-bg, div.invitation-bg, div.video-bg, div.lowpro-bg {
+  height: 150em;
+  width: 100%;
+  position: fixed;
+  background-position: 0em -40em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -3;
+  top: 0em;
+  left: 0;
+  overflow: hidden;
+}
+
+/* line 57, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.nipost-first-container, section.aglow-first-container, section.connect-first-container, section.bugout-first-container, section.wedding-first-container, section.flyer-first-container, section.interconf-first-container, section.tailored-first-container, section.rebrand-first-container, section.branding-first-container, section.newsletter-first-container, section.tradeshow-first-container, section.invitation-first-container, section.video-first-container, section.lowpro-first-container {
+  padding-top: 5%;
+  background: #ffffff;
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* =Remember Order Of Styling Links
+-----------------------------------------------------------------------------*/
+/* line 75, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+a:link, a:visited, a:hover, a:focus, a:active html {
+  font-size: 10px;
+  font-family: 'spurs-regular', sans-serif;
+}
+
+/* line 86, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 91, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+body {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 99, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 103, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+hr {
+  height: 3px;
+  background-color: #f98348;
+  margin: 0 auto;
+  width: 2em;
+  border: 0;
+}
+
+/* line 111, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+#main-container {
+  width: 100%;
+  overflow: auto;
+  clear: both;
+}
+
+/* START STYLING HEADER
+-----------------------------------------------------------------------------*/
+/* line 121, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.menu-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 30px;
+  height: 15px;
+}
+
+/* line 131, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.menu-icon::after {
+  height: 4px;
+  background: #82cec4;
+  box-shadow: 0 7px 0 #82cec4, 0 14px 0 #82cec4;
+}
+
+/* line 137, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.menu-icon:hover::after {
+  background: #82cec4;
+  box-shadow: 0 7px 0 #82cec4, 0 14px 0 #82cec4;
+}
+
+/* line 143, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+header.main-header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: transparent;
+  padding: 2rem 2rem 2rem 2rem;
+  clear: both;
+  overflow: auto;
+}
+
+/* line 153, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+header.main-header img {
+  float: left;
+  width: 100%;
+  max-width: 5em;
+}
+
+/* line 160, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.top-bar-left {
+  width: 100%;
+  max-width: 5em;
+}
+
+/* line 165, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.title-bar {
+  display: none;
+}
+
+/* line 169, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.top-bar, .top-bar ul {
+  background-color: transparent;
+}
+
+/* line 173, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.top-bar {
+  padding: 0;
+}
+
+/* line 177, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+ul.active-nav {
+  background-color: transparent;
+}
+
+/* line 181, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+#lines {
+  display: none;
+}
+
+/* line 185, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.active-link {
+  color: #82cec4 !important;
+}
+
+/* line 189, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+nav.main-nav {
+  float: right;
+  position: relative;
+  top: 1.3em;
+}
+
+/* line 194, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+nav.main-nav ul {
+  clear: both;
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 201, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+nav.main-nav ul li {
+  list-style: none;
+  float: left;
+  margin-right: 2em;
+  display: inline;
+}
+
+/* line 207, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+nav.main-nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 0.11em;
+  line-height: 1.2;
+  display: block;
+  /*&:visited{
+					border-bottom: solid $red-color .3em;
+				}*/
+}
+
+/* line 220, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+nav.main-nav ul li a:hover, nav.main-nav ul li a:focus {
+  color: #82cec4;
+}
+
+/* line 228, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+li.contact-nav {
+  margin-right: 0em !important;
+}
+
+/* START STYLING INDEX PAGE
+-----------------------------------------------------------------------------*/
+/* START STYLING HOME SECTION STYLES
+-------------------------------------------*/
+/* line 238, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.home-bg {
+  height: 150em;
+  max-height: 100%;
+  width: 100%;
+  position: fixed;
+  background-image: url(../imgs/1.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 0em;
+  left: 0;
+  overflow: hidden;
+}
+
+/* line 254, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section#home {
+  box-sizing: border-box;
+  margin-top: 25em;
+  clear: both;
+  height: 71em;
+}
+
+/* line 262, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.home-contents {
+  height: 25em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 267, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.home-contents h1 {
+  width: 100%;
+  color: #ffffff;
+  font-size: 15em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
+  line-height: 0.8em;
+  opacity: 0.7;
+}
+
+/* line 278, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.home-contents h2 {
+  width: 100%;
+  color: #ffffff;
+  font-size: 4em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+/* line 289, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.dwn-btn {
+  max-width: 6em;
+  height: 6em;
+  max-height: 100%;
+  width: 100%;
+  display: block;
+  margin-top: 37em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../imgs/dwn-btn-white.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 302, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.dwn-btn:hover, div.dwn-btn:focus {
+  background-image: url(../imgs/dwn-btn.png);
+  cursor: hand;
+}
+
+/* START STYLING HOME PORTFOLIO SECTION
+-------------------------------------------*/
+/* line 311, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.home-portfolio-container {
+  width: 100%;
+  height: 120em;
+  background-color: #ffffff;
+}
+
+/* line 317, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#home-portfolio {
+  width: 120em;
+  max-width: 100%;
+  height: 101em;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 5%;
+  box-sizing: border-box;
+  margin-bottom: 3%;
+}
+
+/* line 331, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#home-portfolio > p {
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #414042;
+  width: 30em;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* line 344, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-holder, div.right-holder {
+  height: 70em;
+  max-width: 100%;
+  width: 60em;
+  float: left;
+}
+
+/* line 351, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-top {
+  height: 43.5em;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 356, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-top a {
+  text-decoration: none;
+}
+
+/* line 359, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-top a > p {
+  font-size: medium;
+  width: 6em;
+  position: relative;
+  padding: 0.5em;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  top: 25em;
+  background-color: #82cec4;
+}
+
+/* line 372, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-top a img {
+  width: 103%;
+  position: relative;
+  bottom: 5em;
+}
+
+/* line 381, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.right-top {
+  height: 29em;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 386, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.right-top a {
+  text-decoration: none;
+}
+
+/* line 389, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.right-top a img {
+  width: 102%;
+  position: relative;
+  bottom: 17.5em;
+}
+
+/* line 395, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.right-top a > p {
+  font-size: medium;
+  width: 8.1em;
+  position: relative;
+  padding: 0.5em;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  top: 16em;
+  background-color: #82cec4;
+}
+
+/* line 411, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-bottom-one {
+  float: left;
+  width: 50%;
+  height: 25.5em;
+  overflow: hidden;
+}
+
+/* line 417, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-bottom-one a {
+  text-decoration: none;
+}
+
+/* line 420, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-bottom-one a img {
+  width: 118%;
+  position: relative;
+  right: 2em;
+  bottom: 4.5em;
+}
+
+/* line 427, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-bottom-one a > p {
+  font-size: medium;
+  width: 10em;
+  position: relative;
+  padding: 0.5em;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  top: 13.8em;
+  background-color: #82cec4;
+}
+
+/* line 442, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-bottom-two {
+  float: left;
+  width: 50%;
+  height: 25.5em;
+  overflow: hidden;
+}
+
+/* line 448, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-bottom-two a {
+  text-decoration: none;
+}
+
+/* line 451, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-bottom-two a img {
+  width: 107%;
+  position: relative;
+  right: 2em;
+  bottom: 5.5em;
+}
+
+/* line 458, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-bottom-two a > p {
+  font-size: medium;
+  max-width: 100%;
+  width: 8em;
+  position: relative;
+  padding: 0.5em;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  top: 13.8em;
+  background-color: #82cec4;
+}
+
+/* line 474, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.right-bottom {
+  height: 40em;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+/* line 480, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.right-bottom a {
+  text-decoration: none;
+}
+
+/* line 483, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.right-bottom a img {
+  width: 130%;
+  position: relative;
+  right: 10.5em;
+  bottom: 12em;
+}
+
+/* line 490, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.right-bottom a > p {
+  font-size: medium;
+  width: 9em;
+  position: relative;
+  padding: 0.5em;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  top: 22.9em;
+  background-color: #82cec4;
+}
+
+/* line 505, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.port {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  max-width: 31em;
+}
+
+/* line 512, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.port a {
+  text-decoration: none;
+  padding: 1em;
+  font-size: 2em;
+  font-weight: 600;
+  color: #82cec4;
+  background-color: #ffffff;
+  border: solid #82cec4 0.125em;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* line 523, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.port a:hover, div.port a:focus {
+  color: #ffffff;
+  background-color: #82cec4;
+}
+
+/* END STYLING SECTION PORTFOLIO AND HOME-PORTFOLIO-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+/* START STYLING SECTION PROCESS AND PROCESS-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+/* line 538, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.process-container {
+  width: 100%;
+  height: 70em;
+  background-color: #fafafa;
+}
+
+/* line 545, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#process {
+  width: 100%;
+  height: 70em;
+  padding-top: 5%;
+  margin: 0 auto;
+  clear: both;
+  box-sizing: border-box;
+}
+
+/* line 559, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.icon-holder {
+  height: 35em;
+  width: 131em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* line 566, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.icon {
+  float: left;
+  width: auto;
+  margin: 2.3%;
+}
+
+/* line 571, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.icon img {
+  width: 15em;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 578, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.icon p {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #414042;
+  text-align: center;
+  width: 13em;
+  margin-top: 1em;
+}
+
+/* line 587, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.icon p span {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+/* START STYLING PHIL SECTION
+-------------------------------------------*/
+/* line 597, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.phil-container {
+  width: 100%;
+  height: 45em;
+  background-image: url(../imgs/phil-bg.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 606, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#phil {
+  height: 45em;
+  padding-top: 5%;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 613, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#phil h2 {
+  color: #ffffff;
+}
+
+/* line 618, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#phil p {
+  font-size: 2.5em;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #ffffff;
+  width: 36em;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* START STYLING EXPERTISE SECTION
+-------------------------------------------*/
+/* line 634, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.expertise-container {
+  width: 100%;
+  height: 75em;
+  background-color: #82cec4;
+}
+
+/* line 641, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#expertise {
+  width: 100%;
+  clear: both;
+  box-sizing: border-box;
+  height: 75em;
+  padding-top: 5%;
+  margin: 0 auto;
+}
+
+/* line 649, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#expertise h2 {
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+
+/* line 657, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.grouped {
+  height: 45em;
+  width: 125em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* line 664, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-group-top, div.left-group-bottom, div.right-group-top, div.right-group-bottom {
+  height: 15em;
+  float: left;
+  max-width: 100%;
+  width: 57em;
+  margin-bottom: 5%;
+}
+
+/* line 672, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.left-group-top, div.right-group-top {
+  margin-right: 8%;
+}
+
+/* line 676, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.ex-icon {
+  margin: 0 auto;
+  height: 15em;
+}
+
+/* line 680, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.ex-icon img {
+  width: 15em;
+  float: left;
+  display: block;
+  margin-right: 5%;
+}
+
+/* line 687, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.ex-icon p {
+  text-align: left;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffffff;
+  width: 19em;
+  margin-top: 1em;
+  float: left;
+}
+
+/* line 696, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.ex-icon p span {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+/* START STYLING ABOUT SECTION
+-------------------------------------------*/
+/* line 707, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.about-container {
+  width: 100%;
+  background-image: url(../imgs/phil.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 81.5em;
+}
+
+/* line 716, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#about {
+  height: 81.5em;
+  padding-top: 5%;
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+  box-sizing: border-box;
+}
+
+/* line 724, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#about h2 {
+  color: #ffffff;
+}
+
+/* line 729, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#about > p {
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #ffffff;
+  width: 41em;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1.5%;
+}
+
+/* line 740, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#about > p a {
+  text-decoration: none;
+  color: #82cec4;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/* line 746, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#about > p a:hover, div#about > p a:focus {
+  color: #82cec4;
+}
+
+/* line 752, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#about img {
+  width: 15em;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 3em;
+}
+
+/* line 762, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.social-icons {
+  height: 5.3em;
+  width: 25em;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+/* line 770, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.linked {
+  background: url(../imgs/linkedin.png) no-repeat;
+  background-size: 3em;
+  width: 3em;
+  height: 3em;
+  float: left;
+  margin: 1em;
+}
+
+/* line 778, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.linked:hover, .linked:focus {
+  background-image: url(../imgs/linkedin-orange.png);
+}
+
+/* line 783, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.pin {
+  background: url(../imgs/pinterest.png) no-repeat;
+  background-size: 3em;
+  width: 3em;
+  height: 3em;
+  float: left;
+  margin: 1em;
+}
+
+/* line 791, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.pin:hover, .pin:focus {
+  background-image: url(../imgs/pinterest-orange.png);
+}
+
+/* line 796, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.google-plus {
+  background: url(../imgs/google-plus.png) no-repeat;
+  background-size: 3em;
+  width: 3em;
+  height: 3em;
+  float: left;
+  margin: 1em;
+}
+
+/* line 804, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.google-plus:hover, .google-plus:focus {
+  background-image: url(../imgs/google-plus-orange.png);
+}
+
+/* line 809, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.vim {
+  background: url(../imgs/vimeo.png) no-repeat;
+  background-size: 3em;
+  width: 3em;
+  height: 3em;
+  float: left;
+  margin: 1em;
+}
+
+/* line 817, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.vim:hover, .vim:focus {
+  background-image: url(../imgs/vimeo-orange.png);
+}
+
+/* line 822, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.behan {
+  background: url(../imgs/behance.png) no-repeat;
+  background-size: 3em;
+  width: 3em;
+  height: 3em;
+  float: left;
+  margin: 1em;
+}
+
+/* line 830, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.behan:hover, .behan:focus {
+  background-image: url(../imgs/behance-orange.png);
+}
+
+/* line 835, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.dwn-pdf {
+  width: 20em;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 4em;
+  margin: 0 auto;
+}
+
+/* line 842, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.dwn-pdf a {
+  text-decoration: none;
+  padding: 1em;
+  color: #82cec4;
+  background-color: transparent;
+  border: solid #82cec4 0.2em;
+  box-sizing: border-box;
+  display: block;
+  height: 5em;
+}
+
+/* line 852, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.dwn-pdf a:hover, div.dwn-pdf a:focus {
+  color: #ffffff;
+  background-color: #82cec4;
+}
+
+/* line 857, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.dwn-pdf a > p {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
+
+/* END STYLING INDEX PAGE
+-----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/* START STYLING PROJECTS PAGE
+-----------------------------------------------------------------------------*/
+/* START STYLING TOP PORTFOLIO SECTION
+-------------------------------------------*/
+/* line 881, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.portfolio-bg {
+  background-image: url(../imgs/portfolio-img.jpg);
+  background-position: 0em 0em;
+}
+
+/* line 887, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.top-portfolio-container {
+  width: 100%;
+  height: 50em;
+}
+
+/* line 892, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#top-portfolio {
+  width: 100%;
+  padding-top: 7%;
+  box-sizing: border-box;
+  height: 96em;
+  margin: 0 auto;
+}
+
+/* line 899, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#top-portfolio h1 {
+  width: 100%;
+  color: #ffffff;
+  font-size: 15em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
+  line-height: 1.5em;
+  opacity: 0.7;
+  position: fixed;
+  z-index: -2;
+}
+
+/* line 912, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#top-portfolio h2 {
+  width: 100%;
+  font-size: 4em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.5em;
+  position: fixed;
+  z-index: -1;
+  font-family: 'Kaushan Script', cursive;
+  color: #ffffff;
+}
+
+/* START STYLING PORTFOLIO SECTION
+-------------------------------------------*/
+/* line 930, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.portfolio-container {
+  width: 100%;
+  height: 161em;
+  background-color: #ffffff;
+}
+
+/* line 937, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#portfolio {
+  height: 97em;
+  padding-top: 5%;
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+/* line 950, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#portfolio > p {
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #414042;
+  width: 37em;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* line 964, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.port-item {
+  width: 25%;
+  height: 34em;
+  float: left;
+  overflow: hidden;
+}
+
+/* line 971, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.port-item a > img {
+  width: 100%;
+}
+
+/* END STYLING PORTFOLIO PAGE
+-----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/* START CONTACT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 987, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.contact-bg {
+  background-image: url(../imgs/contact-bg-img-2.jpg);
+  background-position: -30em -35em;
+}
+
+/* line 993, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.top-contact-container {
+  width: 100%;
+  height: 50em;
+}
+
+/* line 998, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#top-contact {
+  width: 100%;
+  padding-top: 7%;
+  box-sizing: border-box;
+  height: 96em;
+  margin: 0 auto;
+}
+
+/* line 1005, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#top-contact h1 {
+  width: 100%;
+  color: #ffffff;
+  font-size: 15em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
+  line-height: 1.5em;
+  opacity: 0.7;
+  position: fixed;
+  z-index: -2;
+}
+
+/* line 1020, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section#contact-container {
+  width: 100%;
+  height: 110em;
+  background-color: #ffffff;
+}
+
+/* line 1026, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#contact {
+  height: 110em;
+  padding-top: 5%;
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+  box-sizing: border-box;
+}
+
+/* line 1038, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#contact > p {
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #414042;
+  width: 30em;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* line 1052, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+h3.alert {
+  font-weight: bolder;
+  color: #82cec4;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+/* line 1060, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.p1 {
+  margin-top: 20%;
+}
+
+/* line 1063, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.p1 h3 {
+  font-weight: bolder;
+  color: #82cec4;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+/* line 1074, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+span.error h3 {
+  font-weight: 200;
+  color: #82cec4;
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+/* line 1084, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+form#contact-us {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 85em;
+}
+
+/* line 1090, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+input, textarea {
+  margin-bottom: 1.5em;
+  display: block;
+  width: 61em;
+  max-width: 100%;
+  height: 100%;
+  padding: 1.5em;
+  font-size: 1.4em;
+  line-height: 1.42857143;
+  color: #808080;
+  border: solid 1px #414042;
+  box-shadow: inset 0.2em 0.2em 0.4em #414042;
+  -webkit-box-shadow: inset 0.2em 0.2em 0.4em #414042;
+  -moz-box-shadow: inset 0.2em 0.2em 0.4em #414042;
+  -ms-box-shadow: inset 0.2em 0.2em 0.4em #414042;
+  box-sizing: border-box;
+}
+
+/*button{
+	padding: 1em;
+	border: $green-color solid .1em;
+	font-size: 2.5em;
+	font-weight: 600;
+	color: $green-color;
+	background-color: $white-color;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: block;
+
+	&:hover, &:focus{
+		background-color: $green-color;
+		color: $white-color;
+		border: $green-color solid .1em;
+	}
+}*/
+/* START FOOTER STYLE
+-----------------------------------------------------------------------------*/
+/* line 1127, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+footer.main-footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  box-sizing: border-box;
+  background-color: #82cec4;
+  clear: both;
+}
+
+/* line 1134, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+footer.main-footer p {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+/* START NIPOST PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1145, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.nipost-bg {
+  background-image: url(../imgs/nipost-bg-img.jpg);
+  background-position: -90em -60em;
+}
+
+/* line 1153, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.nipost-home-container {
+  width: 100%;
+  height: 50em;
+}
+
+/* line 1158, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#nipost-home {
+  width: 100%;
+  padding-top: 7%;
+  box-sizing: border-box;
+  height: 96em;
+  margin: 0 auto;
+}
+
+/* line 1165, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#nipost-home h1 {
+  width: 100%;
+  color: #ffffff;
+  font-size: 13em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
+  line-height: 1.5em;
+  opacity: 0.7;
+  position: fixed;
+  z-index: -2;
+}
+
+/* line 1178, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#nipost-home h2 {
+  width: 100%;
+  font-size: 4em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.5em;
+  position: fixed;
+  z-index: -1;
+  font-family: 'Kaushan Script', cursive;
+  color: #ffffff;
+}
+
+/* line 1193, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.nipost-first-container {
+  height: 525em;
+}
+
+/* line 1198, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.nipost-holder {
+  width: 100em;
+  max-width: 100%;
+  clear: both;
+  margin: 0 auto;
+}
+
+/* line 1204, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.nipost-holder h2 {
+  margin-bottom: 0.5em;
+}
+
+/* line 1209, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.nipost-holder > img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  /*margin-bottom:5%;*/
+  border: solid #696969 0.2em;
+}
+
+/* line 1217, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.nipost-holder > p {
+  font-size: 1.9em;
+  line-height: 1.4em;
+  color: #808080;
+  font-weight: 300;
+  width: 100%;
+  max-width: 45em;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+/* line 1229, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.nipost-holder h3 {
+  margin: 5% 0 5% 0;
+  font-weight: 300;
+  color: #414042;
+}
+
+/* line 1236, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.nipost-holder h4 {
+  margin: 5% 0 5% 0;
+  font-weight: 200;
+  color: #414042;
+}
+
+/* line 1244, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.nipost-collateral-holder {
+  width: 100%;
+  height: 80em;
+  border: solid 1px blue;
+}
+
+/* START AGLOW PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1254, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.aglow-bg {
+  background-image: url(../imgs/aglow-bg.jpg);
+}
+
+/* line 1259, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.aglow-first-container {
+  height: 284em;
+}
+
+/* START CONNECT GA PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1267, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.connect-bg {
+  background-image: url(../imgs/connect-bg.jpg);
+}
+
+/* line 1272, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.connect-first-container {
+  height: 510em;
+}
+
+/* line 1277, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.second-last-img {
+  margin-bottom: 5% !important;
+}
+
+/* line 1281, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+.first-sketches {
+  margin-bottom: 5%;
+  border: solid gray 2px;
+}
+
+/* START BUG-OUT PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1289, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.bugout-bg {
+  background-image: url(../imgs/bugout-bg.jpg);
+  background-position: -20em -60em;
+}
+
+/* line 1295, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.bugout-first-container {
+  height: 75em;
+}
+
+/* START WEDDING MAGAZINE PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1303, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.wedding-bg {
+  background-image: url(../imgs/wedding-bg.jpg);
+}
+
+/* line 1308, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.wedding-first-container {
+  height: 354em;
+}
+
+/* START FLYERS PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1316, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.flyer-bg {
+  background-image: url(../imgs/flyer-bg-2.jpg);
+  background-position: -20em -60em;
+}
+
+/* line 1322, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.flyer-first-container {
+  height: 330em;
+}
+
+/* line 1327, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#flyer-home {
+  width: 100%;
+  padding-top: 7%;
+  box-sizing: border-box;
+  height: 96em;
+  margin: 0 auto;
+}
+
+/* line 1335, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#flyer-home h1 {
+  width: 100%;
+  color: #ffffff;
+  font-size: 13em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
+  line-height: 0.8em;
+  opacity: 0.7;
+  position: fixed;
+  z-index: -2;
+}
+
+/* START INTERNET CONFERENCE PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1352, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.interconf-bg {
+  background-image: url(../imgs/interconf-bg.jpg);
+  background-position: -45em -61em;
+}
+
+/* line 1358, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.interconf-first-container {
+  height: 75em;
+}
+
+/* line 1363, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#interconf-home {
+  width: 100%;
+  padding-top: 7%;
+  box-sizing: border-box;
+  height: 96em;
+  margin: 0 auto;
+}
+
+/* line 1370, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div#interconf-home h1 {
+  width: 100%;
+  color: #ffffff;
+  font-size: 13em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
+  line-height: 0.9em;
+  opacity: 0.7;
+  position: fixed;
+  z-index: -2;
+}
+
+/* START TAILORED PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1387, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.tailored-bg {
+  background-image: url(../imgs/tailored-creation-2.jpg);
+  background-position: 0em 0em;
+}
+
+/* line 1393, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.tailored-first-container {
+  height: 421em;
+}
+
+/* START REBRAND PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1401, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.rebrand-bg {
+  background-image: url(../imgs/obaze-design-bg.jpg);
+  background-position: 0em -100em;
+}
+
+/* line 1407, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.rebrand-first-container {
+  height: 266em;
+}
+
+/* START BRANDING PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1415, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.branding-bg {
+  background-image: url(../imgs/branding-bg.jpg);
+  background-position: -15em -5em;
+}
+
+/* line 1421, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.branding-first-container {
+  height: 138em;
+}
+
+/* START NEWSLETTER PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1429, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.newsletter-bg {
+  background-image: url(../imgs/newsletter-bg.jpg);
+  background-position: 0em -60em;
+}
+
+/* line 1435, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.newsletter-first-container {
+  height: 138em;
+}
+
+/* START POP-UP BANNER PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1443, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.tradeshow-bg {
+  background-image: url(../imgs/trade-show-bg.jpg);
+  background-position: -105em -86em;
+}
+
+/* line 1449, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.tradeshow-first-container {
+  height: 202em;
+}
+
+/* START INVITATION PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1457, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.invitation-bg {
+  background-image: url(../imgs/invitation-bg.jpg);
+  background-position: -25em -16em;
+}
+
+/* line 1463, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.invitation-first-container {
+  height: 138em;
+}
+
+/* START VIDEO PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1471, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.video-bg {
+  background-image: url(../imgs/video-bg.jpg);
+  background-position: -40em -40em;
+}
+
+/* line 1477, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.video-first-container {
+  height: 208em;
+}
+
+/* START LOWPRO PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+/* line 1485, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+div.lowpro-bg {
+  background-image: url(../imgs/lowpro-bg.jpg);
+  background-position: -40em -40em;
+}
+
+/* line 1491, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+section.lowpro-first-container {
+  height: 347em;
+}
+
+/* START MEDIA QUARIES
+-----------------------------------------------------------------------------*/
+/* CELL PHONE */
+@media screen and (max-width: 39.9375em) {
+  /* line 1502, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  header.main-header {
+    background-color: #414042;
+    padding: 2rem 0rem 2rem 0rem;
+  }
+  /* line 1507, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  .title-bar {
+    background: transparent;
+    float: right;
+    position: relative;
+    top: 1.5em;
+    margin-right: 2rem;
+  }
+  /* line 1515, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  .top-bar-left {
+    margin-left: 2rem;
+  }
+  /* line 1519, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  nav.main-nav {
+    padding-right: 0;
+    height: 18.5em;
+    border-top: solid 1px #82cec4;
+    position: relative;
+    top: 2em;
+  }
+  /* line 1526, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  nav.main-nav ul {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    height: 18.5em;
+  }
+  /* line 1532, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  nav.main-nav ul li {
+    width: 100%;
+    padding: 0;
+  }
+  /* line 1536, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  nav.main-nav ul li a {
+    text-align: center;
+    font-weight: 700;
+    padding: 1em;
+  }
+  /* line 1541, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  nav.main-nav ul li a:hover, nav.main-nav ul li a:focus {
+    color: #82cec4;
+    border-bottom: none;
+    cursor: hand;
+  }
+  /* line 1552, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  .active-link {
+    color: #82cec4 !important;
+    border-bottom: none;
+  }
+  /* line 1557, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  .home-nav, .projects-nav {
+    border-bottom: #82cec4 solid 1px;
+  }
+  /* line 1561, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  .contact-nav a {
+    padding-bottom: 0 !important;
+  }
+  /*End header style*/
+  /* line 1567, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  div.home-bg {
+    height: 63em;
+  }
+  /* line 1571, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  section#home {
+    margin-top: 25em;
+    width: 100%;
+    height: 63em;
+    clear: both;
+  }
+  /* line 1578, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  div.home-contents {
+    height: 21em;
+  }
+  /* line 1581, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  div.home-contents h1 {
+    line-height: 0.8em;
+    font-size: 10em;
+  }
+  /* line 1586, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  div.home-contents h2 {
+    line-height: 1.1em;
+    font-size: 3em;
+  }
+  /* line 1592, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  div.dwn-btn {
+    display: none;
+  }
+}
+
+/* MEDIUM SCREEN */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  /* line 1601, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  section#home {
+    height: 53.3em;
+  }
+  /* line 1605, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  div.dwn-btn {
+    max-width: 6em;
+    height: 6em;
+    max-height: 100%;
+    width: 100%;
+    display: block;
+    margin-top: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../imgs/dwn-btn-white.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  /* line 1618, /Users/chuckobazemac/Documents/tottenham-history/sass/chuck-designs.scss */
+  div.dwn-btn:hover, div.dwn-btn:focus {
+    background-image: url(../imgs/dwn-btn.png);
+    cursor: hand;
+  }
+}
+
+/*# sourceMappingURL=../css/chuck-designs.map */

@@ -1,0 +1,1638 @@
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Chuck Obaze
+email:     obazechuck@gmail.com
+website:   http://obazedesigns.com
+-----------------------------------------------------------------------------*/
+
+
+/* =imports
+-----------------------------------------------------------------------------*/
+@import 'fontfamily';
+
+@import 'colors';
+
+
+/* =SASS Variables
+-----------------------------------------------------------------------------*/
+
+$border: solid 1px;
+$body-font-size: 10px;
+$section-height: 96em;
+$white-font: $white-color;
+
+%row{
+	max-width: 75rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+%columns{
+	padding: 0 2rem 0 2rem;
+}
+
+%h2-values{
+	text-align: center;
+	margin-bottom:2%;
+	color: $spur-blue;
+	font-size: 3.5em;
+	font-weight: 300;
+}
+
+%parrallex-bg{
+	height: 150em;
+	width: 100%;
+	position: fixed;
+	background-position: 0em -40em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -3;
+	top:0em;
+	left:0;
+	overflow: hidden;
+}
+
+%port-container{
+	padding-top: 5%;
+    background: $white-color;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@mixin box-shadow ($radius){
+	box-shadow: $radius;
+	-webkit-box-shadow: $radius;
+	-moz-box-shadow: $radius;
+	-ms-box-shadow: $radius;
+}
+
+/* =Remember Order Of Styling Links
+-----------------------------------------------------------------------------*/
+
+a:link, a:visited, a:hover, a:focus, a:active
+
+/* =Start General Website Style
+-----------------------------------------------------------------------------*/
+
+
+html{
+	font-size: $body-font-size;
+	font-family: 'spurs-regular', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 62.5%;
+	font-family: $roboto;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $roboto;
+}
+
+hr{
+	height: 3px;
+	background-color: #f98348;
+	margin: 0 auto;
+	width: 2em;;
+	border: 0;
+}
+
+#main-container{
+	width: 100%;
+	overflow: auto;
+	clear: both;
+}
+
+
+/* START STYLING HEADER
+-----------------------------------------------------------------------------*/
+
+.menu-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 30px;
+    height: 15px;
+
+}
+
+.menu-icon::after{
+	height: 4px;
+	background: $green-color;
+	box-shadow: 0 7px 0 $green-color, 0 14px 0 $green-color;
+}
+
+.menu-icon:hover::after{
+	background: $green-color;
+	box-shadow: 0 7px 0 $green-color, 0 14px 0 $green-color;
+
+}
+
+header.main-header{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	background-color: $spur-blue;
+	padding: 2rem 2rem 2rem 2rem;
+	clear: both;
+	overflow: auto;
+
+
+	img{
+		float: left;
+		width: 100%;
+		max-width: 5em;
+	}
+}
+
+.top-bar-left{
+	width: 100%;
+	max-width: 5em;
+}
+
+.title-bar{
+	display: none;
+}
+
+.top-bar, .top-bar ul{
+	background-color: transparent;
+}
+
+.top-bar{
+	padding: 0;
+}
+
+ul.active-nav{
+	background-color: transparent;
+}
+
+#lines{
+	display: none;
+}
+
+.active-link{
+	color: $green-color !important;
+}
+
+nav.main-nav{
+	float: right;
+	position: relative;
+	top: 1.3em;
+
+	ul{
+		clear: both;
+		height: 2em;
+		padding: 0;
+		margin: 0;
+
+
+		li{
+			list-style: none;
+			float: left;
+			margin-right: 2em;
+			display: inline;
+
+			a{
+				text-decoration: none;
+				color:$white-color;
+				font-size: 2em;
+				font-weight: 600;
+				padding: 0.11em;
+				line-height: 1.2;
+				display: block;
+
+				/*&:visited{
+					border-bottom: solid $red-color .3em;
+				}*/
+
+				&:hover, &:focus, /*&:active*/{
+					color: $green-color;
+				}
+			}
+		}
+	}
+}
+
+li.contact-nav{
+	margin-right: 0em !important;
+}
+
+/* START STYLING INDEX PAGE
+-----------------------------------------------------------------------------*/
+
+/* START STYLING HOME SECTION STYLES
+-------------------------------------------*/
+
+div.home-bg{
+	height: 150em;
+	max-height: 100%;
+	width: 100%;
+	position: fixed;
+	background-image: url(../imgs/1.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+	top:0em;
+	left:0;
+	overflow: hidden;
+
+}
+
+section#home{
+	box-sizing: border-box;
+	margin-top: 25em;
+	clear: both;
+	@extend %row;
+	height: 71em;
+}
+
+div.home-contents{
+	height: 25em;
+	width: 100%;
+	margin: 0 auto;
+
+	h1{
+		width: 100%;
+		color: $white-color;
+		font-size: 15em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: bolder;
+		line-height: 0.8em;
+		opacity: 0.7;
+	}
+
+	h2{
+		width: 100%;
+		color: $white-color;
+		font-size: 4em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: 300;
+		line-height: 1.5em;
+	}
+}
+
+div.dwn-btn{
+		max-width: 6em;
+		height: 6em;
+		max-height: 100%;
+		width: 100%;
+		display: block;
+		margin-top: 37em;
+	    margin-left: auto;
+	    margin-right: auto;
+		background-image: url(../imgs/dwn-btn-white.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		&:hover, &:focus{
+			background-image: url(../imgs/dwn-btn.png);
+			cursor: hand;
+		}
+}
+
+/* START STYLING HOME PORTFOLIO SECTION
+-------------------------------------------*/
+
+section.home-portfolio-container{
+	width:100%;
+	height: 120em;
+	background-color: $white-color;
+}
+
+div#home-portfolio{
+	width: 120em;
+	max-width: 100%;
+	height: 101em;
+	margin: 0 auto;
+	clear: both;
+	padding-top: 5%;
+	box-sizing: border-box;
+	margin-bottom: 3%;
+
+	h2{
+		@extend %h2-values;
+	}
+
+	&>p{
+		font-size: 2em;
+		font-weight: 200;
+		line-height: 1.5em;
+		color: $alt-font-color;
+		width: 30em;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 2em;
+	}
+}
+
+div.left-holder, div.right-holder{
+	height: 70em;
+	max-width: 100%;
+	width: 60em;
+	float: left;
+}
+
+div.left-top{
+	height: 43.5em;
+	width: 100%;
+	overflow: hidden;
+
+	a{
+		text-decoration: none;
+
+		&>p{
+			font-size: medium;
+			width: 6em;
+			position: relative;
+			padding: 0.5em;
+			color: $white-color;
+			font-weight: bold;
+			text-decoration: none;
+			z-index: 1;
+			top: 25em;
+			background-color: $green-color;
+		}
+
+		img{
+			width: 103%;
+			position: relative;
+			bottom: 5em;
+		}
+	}
+
+}
+
+div.right-top{
+	height: 29em;
+	width: 100%;
+	overflow: hidden;
+
+	a{
+		text-decoration: none;
+
+	img{
+		width: 102%;
+		position: relative;
+		bottom: 17.5em;
+	}
+
+	&>p{
+			font-size: medium;
+			width: 8.1em;
+			position: relative;
+			padding: 0.5em;
+			color: $white-color;
+			font-weight: bold;
+			text-decoration: none;
+			z-index: 1;
+			top: 16em;
+			background-color: $green-color;
+		}
+
+	}
+}
+
+div.left-bottom-one{
+	float: left;
+	width: 50%;
+	height: 25.5em;
+	overflow: hidden;
+
+	a{
+		text-decoration: none;
+
+	img{
+		width: 118%;
+		position: relative;
+		right: 2em;
+		bottom: 4.5em;
+	}
+
+	&>p{
+			font-size: medium;
+			width: 10em;
+			position: relative;
+			padding: 0.5em;
+			color: $white-color;
+			font-weight: bold;
+			text-decoration: none;
+			z-index: 1;
+			top: 13.8em;
+			background-color: $green-color;
+		}
+	}
+}
+
+div.left-bottom-two{
+	float: left;
+	width: 50%;
+	height: 25.5em;
+	overflow: hidden;
+
+	a{
+		text-decoration: none;
+
+		img{
+		width: 107%;
+		position: relative;
+		right: 2em;
+		bottom: 5.5em;
+		}
+
+		&>p{
+			font-size: medium;
+			max-width: 100%;
+			width: 8em;
+			position: relative;
+			padding: 0.5em;
+			color: $white-color;
+			font-weight: bold;
+			text-decoration: none;
+			z-index: 1;
+			top: 13.8em;
+			background-color: $green-color;
+		}
+	}
+}
+
+div.right-bottom{
+	height: 40em;
+	width: 100%;
+	float: left;
+	overflow: hidden;
+
+	a{
+		text-decoration: none;
+
+	img{
+		width: 130%;
+		position: relative;
+		right: 10.5em;
+		bottom: 12em;
+	}
+
+	&>p{
+			font-size: medium;
+			width: 9em;
+			position: relative;
+			padding: 0.5em;
+			color: $white-color;
+			font-weight: bold;
+			text-decoration: none;
+			z-index: 1;
+			top: 22.9em;
+			background-color: $green-color;
+		}
+	}
+}
+
+div.port{
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+	max-width: 31em;
+
+	a{
+		text-decoration: none;
+		padding: 1em;
+		font-size: 2em;
+		font-weight: 600;
+		color: $green-color;
+		background-color: $white-color;
+		border: solid $green-color 0.125em;
+		box-sizing: border-box;
+		display: block;
+
+		&:hover, &:focus{
+			color: $white-color;
+			background-color: $green-color;
+		}
+
+	}
+}
+
+
+/* END STYLING SECTION PORTFOLIO AND HOME-PORTFOLIO-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+/* START STYLING SECTION PROCESS AND PROCESS-CONTAINER STYLES
+-----------------------------------------------------------------------------*/
+
+section.process-container{
+	width:100%;
+	height: 70em;
+	background-color: #fafafa;
+
+}
+
+div#process{
+	width: 100%;
+	height: 70em;
+	padding-top: 5%;
+	margin: 0 auto;
+	clear: both;
+	box-sizing: border-box;
+
+	h2{
+		@extend %h2-values;
+	}
+
+}
+
+div.icon-holder{
+	height: 35em;
+	width: 131em;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+div.icon{
+	float: left;
+	width: auto;
+	margin: 2.3%;
+
+	img{
+		width: 15em;
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	p{
+		text-align: center;
+		font-size: 2em;
+		font-weight: bold;
+		color: $alt-font-color;
+		text-align: center;
+		width: 13em;
+		margin-top: 1em;
+
+		span{
+			font-size: 0.8em;
+			font-weight: 200;
+		}
+	}
+}
+
+/* START STYLING PHIL SECTION
+-------------------------------------------*/
+
+section.phil-container{
+	width:100%;
+	height: 45em;
+	background-image: url(../imgs/phil-bg.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div#phil{
+	height: 45em;
+	padding-top: 5%;
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+
+	h2{
+		@extend %h2-values;
+		color: $white-color;
+	}
+
+	p{
+		font-size: 2.5em;
+		font-weight: 200;
+		line-height: 1.5em;
+		color: $white-color;
+		width: 36em;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+}
+
+/* START STYLING EXPERTISE SECTION
+-------------------------------------------*/
+
+section.expertise-container{
+	width:100%;
+	height: 75em;
+	background-color: $green-color;
+
+}
+
+div#expertise{
+	width: 100%;
+	clear: both;
+	box-sizing: border-box;
+	height: 75em;
+	padding-top: 5%;
+	margin: 0 auto;
+
+	h2{
+		@extend %h2-values;
+		color: $white-color;
+		margin-bottom: 5%;
+	}
+
+}
+
+div.grouped{
+	height: 45em;
+	width: 125em;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+div.left-group-top, div.left-group-bottom, div.right-group-top, div.right-group-bottom{
+	height: 15em;
+	float: left;
+	max-width: 100%;
+	width: 57em;
+	margin-bottom: 5%;
+}
+
+div.left-group-top, div.right-group-top{
+	margin-right: 8%;
+}
+
+div.ex-icon{
+	margin:0 auto;
+	height: 15em;
+
+	img{
+		width: 15em;
+		float: left;
+		display: block;
+		margin-right: 5%;
+	}
+
+	p{
+		text-align: left;
+		font-size: 2em;
+		font-weight: bold;
+		color: $white-color;
+		width: 19em;
+		margin-top: 1em;
+		float: left;
+
+		span{
+			font-size: 0.8em;
+			font-weight: 200;
+
+		}
+	}
+}
+
+/* START STYLING ABOUT SECTION
+-------------------------------------------*/
+
+section.about-container{
+	width:100%;
+	background-image: url(../imgs/phil.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 81.5em;
+}
+
+div#about{
+	height: 81.5em;
+	padding-top: 5%;
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	box-sizing: border-box;
+
+	h2{
+		@extend %h2-values;
+		color: $white-color;
+	}
+
+	&>p{
+		font-size: 2em;
+		font-weight: 200;
+		line-height: 1.5em;
+		color: $white-color;
+		width: 41em;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 1.5%;
+
+		a{
+			text-decoration: none;
+			color: $green-color;
+			font-size: 1em;
+			font-weight: 500;
+
+			&:hover, &:focus{
+				color: $green-color;
+			}
+		}
+	}
+
+	img{
+		width: 15em;
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 3em;
+	}
+
+}
+
+.social-icons{
+	height: 5.3em;
+	width: 25em;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-top: 1%;
+}
+
+.linked{
+	background: url(../imgs/linkedin.png) no-repeat;
+	background-size: 3em;
+	width: 3em;
+	height: 3em;
+	float: left;
+	margin: 1em;
+
+	&:hover, &:focus{
+			background-image: url(../imgs/linkedin-orange.png);
+		}
+}
+
+.pin{
+	background: url(../imgs/pinterest.png) no-repeat;
+	background-size: 3em;
+	width: 3em;
+	height: 3em;
+	float: left;
+	margin: 1em;
+
+	&:hover, &:focus{
+			background-image: url(../imgs/pinterest-orange.png);
+		}
+}
+
+.google-plus{
+	background: url(../imgs/google-plus.png) no-repeat;
+	background-size: 3em;
+	width: 3em;
+	height: 3em;
+	float: left;
+	margin: 1em;
+
+	&:hover, &:focus{
+			background-image: url(../imgs/google-plus-orange.png);
+		}
+}
+
+.vim{
+	background: url(../imgs/vimeo.png) no-repeat;
+	background-size: 3em;
+	width: 3em;
+	height: 3em;
+	float: left;
+	margin: 1em;
+
+	&:hover, &:focus{
+			background-image: url(../imgs/vimeo-orange.png);
+		}
+}
+
+.behan{
+	background: url(../imgs/behance.png) no-repeat;
+	background-size: 3em;
+	width: 3em;
+	height: 3em;
+	float: left;
+	margin: 1em;
+
+	&:hover, &:focus{
+			background-image: url(../imgs/behance-orange.png);
+		}
+}
+
+div.dwn-pdf{
+	width: 20em;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 4em;
+	margin: 0 auto;
+
+	a{
+		text-decoration: none;
+		padding: 1em;
+		color: $green-color;
+		background-color: transparent;
+		border: solid $green-color 0.2em;
+		box-sizing: border-box;
+		display: block;
+		height: 5em;
+
+		&:hover, &:focus{
+			color: $white-color;
+			background-color: $green-color;
+		}
+
+		&>p{
+			text-align: center;
+			font-size: 2em;
+			font-weight: bold;
+			margin: 0 auto;
+			margin-bottom: 1%;
+		}
+
+	}
+}
+
+/* END STYLING INDEX PAGE
+-----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/* START STYLING PROJECTS PAGE
+-----------------------------------------------------------------------------*/
+
+/* START STYLING TOP PORTFOLIO SECTION
+-------------------------------------------*/
+
+div.portfolio-bg{
+	@extend %parrallex-bg;
+	background-image: url(../imgs/portfolio-img.jpg);
+	background-position: 0em 0em;
+}
+
+section.top-portfolio-container{
+	width:100%;
+	height: 50em;
+}
+
+div#top-portfolio{
+	width: 100%;
+	padding-top: 7%;
+	box-sizing: border-box;
+	height: 96em;
+	margin: 0 auto;
+
+	h1{
+		width: 100%;
+		color: $white-color;
+		font-size: 15em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: bolder;
+		line-height: 1.5em;
+		opacity: 0.7;
+		position: fixed;
+		z-index: -2;
+	}
+
+	h2{
+		width: 100%;
+		font-size: 4em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: 300;
+		line-height: 1.5em;
+		position: fixed;
+		z-index: -1;
+		font-family: 'Kaushan Script', cursive;
+		color: $white-color;
+	}
+
+}
+
+/* START STYLING PORTFOLIO SECTION
+-------------------------------------------*/
+
+section.portfolio-container{
+	width:100%;
+	height: 161em;
+	background-color: $white-color;
+
+}
+
+div#portfolio{
+	height: 97em;
+	padding-top: 5%;
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	box-sizing: border-box;
+	background-color: $white-color;
+
+	h2{
+		@extend %h2-values;
+	}
+
+	&>p{
+		font-size: 2em;
+		font-weight: 200;
+		line-height: 1.5em;
+		color: $alt-font-color;
+		width: 37em;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
+}
+
+div.port-item{
+	width: 25%;
+	height: 34em;
+	float: left;
+	overflow: hidden;
+
+	a{
+		&>img{
+			width: 100%;
+		}
+	}
+}
+
+/* END STYLING PORTFOLIO PAGE
+-----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/* START CONTACT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.contact-bg{
+	@extend %parrallex-bg;
+	background-image: url(../imgs/contact-bg-img-2.jpg);
+	background-position: -30em -35em;
+}
+
+section.top-contact-container{
+	width:100%;
+	height: 50em;
+}
+
+div#top-contact{
+	width: 100%;
+	padding-top: 7%;
+	box-sizing: border-box;
+	height: 96em;
+	margin: 0 auto;
+
+	h1{
+		width: 100%;
+		color: $white-color;
+		font-size: 15em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: bolder;
+		line-height: 1.5em;
+		opacity: 0.7;
+		position: fixed;
+		z-index: -2;
+	}
+
+}
+
+section#contact-container{
+	width:100%;
+	height: 110em;
+	background-color: $white-color;
+}
+
+div#contact{
+	height: 110em;
+	padding-top: 5%;
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	box-sizing: border-box;
+
+	h2{
+		@extend %h2-values;
+	}
+
+	&>p{
+		font-size: 2em;
+		font-weight: 200;
+		line-height: 1.5em;
+		color: $alt-font-color;
+		width: 30em;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
+}
+
+h3.alert{
+	font-weight: bolder;
+	color: $green-color;
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+div.p1{
+	margin-top: 20%;
+
+	h3{
+	font-weight: bolder;
+	color: $green-color;
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 2%;
+	}
+}
+
+span.error{
+
+	h3{
+		font-weight: 200;
+		color: $green-color;
+		font-size: 1.5em;
+		font-style: italic;
+		text-align: left;
+		margin-bottom: 2%;
+	}
+}
+
+form#contact-us{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 85em;
+}
+
+input,textarea{
+	margin-bottom: 1.5em;
+	display: block;
+    width: 61em;
+    max-width: 100%;
+    height: 100%;
+    padding: 1.5em;
+    font-size: 1.4em;
+    line-height: 1.42857143;
+    color: $font-color;
+    border: $border $alt-font-color;
+    @include box-shadow(inset 0.2em 0.2em 0.4em $alt-font-color);
+    box-sizing: border-box;
+
+}
+
+/*button{
+	padding: 1em;
+	border: $green-color solid .1em;
+	font-size: 2.5em;
+	font-weight: 600;
+	color: $green-color;
+	background-color: $white-color;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: block;
+
+	&:hover, &:focus{
+		background-color: $green-color;
+		color: $white-color;
+		border: $green-color solid .1em;
+	}
+}*/
+
+/* START FOOTER STYLE
+-----------------------------------------------------------------------------*/
+
+footer.main-footer{
+	padding-top:2em;
+	padding-bottom: 2em;
+	box-sizing: border-box;
+	background-color: $green-color;
+	clear: both;
+
+	p{
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: 200;
+		color: $white-color;
+	}
+}
+
+/* START NIPOST PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.nipost-bg{
+	background-image: url(../imgs/nipost-bg-img.jpg);
+	@extend %parrallex-bg;
+	background-position: -90em -60em;
+
+
+}
+
+section.nipost-home-container{
+	width:100%;
+	height: 50em;
+}
+
+div#nipost-home{
+	width: 100%;
+	padding-top: 7%;
+	box-sizing: border-box;
+	height: 96em;
+	margin: 0 auto;
+
+	h1{
+		width: 100%;
+		color: $white-color;
+		font-size: 13em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: bolder;
+		line-height: 1.5em;
+		opacity: 0.7;
+		position: fixed;
+		z-index: -2;
+	}
+
+	h2{
+		width: 100%;
+		font-size: 4em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: 300;
+		line-height: 1.5em;
+		position: fixed;
+		z-index: -1;
+		font-family: 'Kaushan Script', cursive;
+		color: $white-color;
+	}
+
+}
+
+section.nipost-first-container{
+	height: 525em;
+	@extend %port-container;
+}
+
+div.nipost-holder{
+	width: 100em;
+	max-width: 100%;
+	clear: both;
+	margin: 0 auto;
+
+	h2{
+		@extend %h2-values;
+		margin-bottom: 0.5em;
+	}
+
+	&>img{
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		/*margin-bottom:5%;*/
+		border: solid #696969 0.2em;
+	}
+
+	&>p{
+		font-size: 1.9em;
+		line-height: 1.4em;
+		color: $font-color;
+		font-weight: 300;
+		width: 100%;
+		max-width: 45em;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 1em;
+	}
+
+	h3{
+		@extend %h2-values;
+		margin: 5% 0 5% 0;
+		font-weight: 300;
+		color: $alt-font-color;
+	}
+
+	h4{
+		@extend %h2-values;
+		margin: 5% 0 5% 0;
+		font-weight: 200;
+		color: $alt-font-color;
+	}
+}
+
+div.nipost-collateral-holder{
+		width: 100%;
+		height: 80em;
+		border: $border blue;
+
+}
+
+/* START AGLOW PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.aglow-bg{
+	background-image: url(../imgs/aglow-bg.jpg);
+	@extend %parrallex-bg;
+}
+
+section.aglow-first-container{
+	height: 284em;
+	@extend %port-container;
+}
+
+/* START CONNECT GA PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.connect-bg{
+	background-image: url(../imgs/connect-bg.jpg);
+	@extend %parrallex-bg;
+}
+
+section.connect-first-container{
+	height: 510em;
+	@extend %port-container;
+}
+
+.second-last-img{
+	margin-bottom: 5% !important;
+}
+
+.first-sketches{
+	margin-bottom: 5%;
+	border: solid gray 2px;
+}
+
+/* START BUG-OUT PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.bugout-bg{
+	background-image: url(../imgs/bugout-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -20em -60em;
+}
+
+section.bugout-first-container{
+	height: 75em;
+	@extend %port-container;
+}
+
+/* START WEDDING MAGAZINE PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.wedding-bg{
+	background-image: url(../imgs/wedding-bg.jpg);
+	@extend %parrallex-bg;
+}
+
+section.wedding-first-container{
+	height: 354em;
+	@extend %port-container;
+}
+
+/* START FLYERS PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.flyer-bg{
+	background-image: url(../imgs/flyer-bg-2.jpg);
+	@extend %parrallex-bg;
+	background-position: -20em -60em;
+}
+
+section.flyer-first-container{
+	height: 330em;
+	@extend %port-container;
+}
+
+div#flyer-home{
+
+	width: 100%;
+	padding-top: 7%;
+	box-sizing: border-box;
+	height: 96em;
+	margin: 0 auto;
+
+	h1{
+	    width: 100%;
+	    color: $white-color;
+	    font-size: 13em;
+	    text-align: center;
+	    margin: 0 auto;
+	    font-weight: bolder;
+	    line-height: 0.8em;
+	    opacity: 0.7;
+	    position: fixed;
+	    z-index: -2;
+    }
+}
+
+/* START INTERNET CONFERENCE PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.interconf-bg{
+	background-image: url(../imgs/interconf-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -45em -61em;
+}
+
+section.interconf-first-container{
+	height: 75em;
+	@extend %port-container;
+}
+
+div#interconf-home{
+	width: 100%;
+	padding-top: 7%;
+	box-sizing: border-box;
+	height: 96em;
+	margin: 0 auto;
+
+	h1{
+		width: 100%;
+		color: $white-color;
+		font-size: 13em;
+		text-align: center;
+		margin: 0 auto;
+		font-weight: bolder;
+		line-height: 0.9em;
+		opacity: 0.7;
+		position: fixed;
+		z-index: -2;
+	}
+}
+
+/* START TAILORED PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.tailored-bg{
+	background-image: url(../imgs/tailored-creation-2.jpg);
+	background-position: 0em 0em;
+	@extend %parrallex-bg;
+}
+
+section.tailored-first-container{
+	height: 421em;
+	@extend %port-container;
+}
+
+/* START REBRAND PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.rebrand-bg{
+	background-image: url(../imgs/obaze-design-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: 0em -100em;
+}
+
+section.rebrand-first-container{
+	height: 266em;
+	@extend %port-container;
+}
+
+/* START BRANDING PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.branding-bg{
+	background-image: url(../imgs/branding-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -15em -5em;
+}
+
+section.branding-first-container{
+	height: 138em;
+	@extend %port-container;
+}
+
+/* START NEWSLETTER PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.newsletter-bg{
+	background-image: url(../imgs/newsletter-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: 0em -60em;
+}
+
+section.newsletter-first-container{
+	height: 138em;
+	@extend %port-container;
+}
+
+/* START POP-UP BANNER PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.tradeshow-bg{
+	background-image: url(../imgs/trade-show-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -105em -86em;
+}
+
+section.tradeshow-first-container{
+	height: 202em;
+	@extend %port-container;
+}
+
+/* START INVITATION PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.invitation-bg{
+	background-image: url(../imgs/invitation-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -25em -16em;
+}
+
+section.invitation-first-container{
+	height: 138em;
+	@extend %port-container;
+}
+
+/* START VIDEO PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.video-bg{
+	background-image: url(../imgs/video-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -40em -40em;
+}
+
+section.video-first-container{
+	height: 208em;
+	@extend %port-container;
+}
+
+/* START LOWPRO PROJECT PAGE STYLES
+-----------------------------------------------------------------------------*/
+
+div.lowpro-bg{
+	background-image: url(../imgs/lowpro-bg.jpg);
+	@extend %parrallex-bg;
+	background-position: -40em -40em;
+}
+
+section.lowpro-first-container{
+	height: 347em;
+	@extend %port-container;
+}
+
+/* START MEDIA QUARIES
+-----------------------------------------------------------------------------*/
+
+/* CELL PHONE */
+@media screen and (max-width: 39.9375em) {
+
+	header.main-header{
+		background-color: $alt-font-color;
+		padding: 2rem 0rem 2rem 0rem;
+	}
+
+	.title-bar{
+		background: transparent;
+		float: right;
+		position: relative;
+		top: 1.5em;
+		margin-right: 2rem;
+	}
+
+	.top-bar-left{
+		margin-left: 2rem;
+	}
+
+	nav.main-nav{
+		padding-right: 0;
+		height: 18.5em;
+		border-top: $border $green-color;
+		position: relative;
+		top: 2em;
+
+		ul{
+			margin: 0 auto;
+			width: 100%;
+		    display: block;
+		    height: 18.5em;
+
+		    li{
+			    width: 100%;
+			    padding: 0;
+
+				a{
+					text-align: center;
+					font-weight: 700;
+					padding: 1em;
+
+					&:hover, &:focus, /*&:active*/{
+					color: $green-color;
+					border-bottom: none;
+					cursor: hand;
+					}
+				}
+			}
+		}
+
+	}
+
+	.active-link{
+		color: $green-color !important;
+		border-bottom: none;
+	}
+
+	.home-nav, .projects-nav{
+		border-bottom: $green-color $border;
+	}
+
+	.contact-nav a{
+		padding-bottom: 0 !important;
+	}
+
+    /*End header style*/
+
+	div.home-bg {
+	    height: 63em;
+    }
+
+	section#home{
+		margin-top: 25em;
+		width: 100%;
+		height: 63em;
+		clear: both;
+	}
+
+	div.home-contents{
+		height: 21em;
+
+		h1{
+			line-height: 0.8em;
+			font-size: 10em;
+		}
+
+		h2{
+			line-height: 1.1em;
+			font-size: 3em;
+		}
+	}
+
+	div.dwn-btn{
+		display: none;
+	}
+}
+
+/* MEDIUM SCREEN */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+	section#home{
+		height: 53.3em;
+	}
+
+	div.dwn-btn{
+		max-width: 6em;
+		height: 6em;
+		max-height: 100%;
+		width: 100%;
+		display: block;
+		margin-top: 20em;
+	    margin-left: auto;
+	    margin-right: auto;
+		background-image: url(../imgs/dwn-btn-white.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		&:hover, &:focus{
+			background-image: url(../imgs/dwn-btn.png);
+			cursor: hand;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
