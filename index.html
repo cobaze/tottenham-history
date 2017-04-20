@@ -55,58 +55,44 @@
 				<div class="dwn-btn"><a href="#projects"></a></div>
 			</section> <!-- End Section Home -->
 
-			<section class="home-portfolio-container"> <!-- Start Home Portfolio Container -->
-				<div id="home-portfolio">
-					<h2>MY PORTFOLIO<hr></h2>
-					<p>My portfolio is a mix of responsive web design, identity branding, package design, editorials and more.</p>
-					<div class="left-holder">
-						<div class="left-top">
-							<a href="connect-ga.html">
-								<p>WEB DESIGN</p>
-								<img src="imgs/connect-ga-img.jpg" alt="Connect Georgia">
-							</a>
-						</div>
-						<div class="left-bottom-one">
-							<a href="inter-conf.html">
-								<p>RESPONSIVE DESIGN</p>
-								<img src="imgs/internet-security.jpg" alt="Internet Security Conference">
-							</a>
-						</div>
-						<div class="left-bottom-two">
-							<a href="branding.html">
-								<p class="brand-id">BRAND IDENTITY</p>
-								<img src="imgs/driven-vision.jpg" alt="Brand Identity">
-							</a>
-						</div>
-					</div>
-
-					<div class="right-holder">
-						<div class="right-top">
-							<a href="aglow.html">
-								<p>PACKAGE DESIGN</p>
-								<img src="imgs/aglow-img.jpg" alt="Aglow Organic Scented Candles">
-							</a>
-						</div>
-						<div class="right-bottom">
-							<a href="wedding-lens.html">
-								<p>EDITORIAL DESIGN</p>
-								<img src="imgs/wedding-lens-img-3.jpg" alt="Wedding Photography Magazine">
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="port"> <!-- Start Port-->
-					<a href="portfolio.html">VIEW COMPLETE PORTFOLIO</a>
-				</div> <!-- End Port-->
-			</section> <!-- End Home Portfolio Container -->
-
 		</div> <!--End Large-12 Main Container-->
 
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/vendor/what-input.js"></script>
 		<script src="js/vendor/foundation.js"></script>
 		<script src="js/app.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(this).scrollTop(0);
+
+				$(document.body).hide().fadeIn(1500);
+
+
+				$('.logo-link').click(function(e){
+					e.preventDefault();
+					$('html, body').animate({
+						scrollTop: $("#home").offset().top
+							}, 2000);
+				});
+
+				$('.dwn-btn').click(function(e){
+					e.preventDefault();
+					$('html, body').animate({
+						scrollTop: $("#home-portfolio").offset().top
+							}, 2000);
+				});
+
+				$(window).scroll(function(){
+
+					if ($(window).scrollTop() > 1) {
+						$('.main-header').css({ 'background-color': 'rgba(0, 0, 0, 0.6)'});
+					} else {
+						$('.main-header').css("background-color", "transparent");
+					}
+
+				});
+			});
+		</script>
 	</body>
 </html>
 
